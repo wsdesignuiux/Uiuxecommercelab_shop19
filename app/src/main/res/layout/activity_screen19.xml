@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    android:orientation="vertical"
+    tools:context=".Screen19Activity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/panel1" />
+
+        <include layout="@layout/toolbar19" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:tabIndicatorColor="#2962ff"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="#000000" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#338d8d8d" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
